@@ -68,7 +68,7 @@ MDScreen:
                     orientation: 'vertical'
 
                     MDToolbar:
-                        title: "Navigation Drawer"
+                        title: "Каталог"
                         elevation: 10
                         left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
 
@@ -110,12 +110,20 @@ class RumOpt(MDApp):
 
     def on_start(self):
         icons_item = {
-            "folder": "Каталог",
-            "account-multiple": "Shared with me",
-            "star": "Starred",
-            "history": "test123",
-            "checkbox-marked": "Shared with me",
-            "upload": "Upload",
+            "foldr": "ПВХ Полотна",
+            "star": "Тканенвые полотна",
+            "box": "Профиль для натяжных потолков",
+            "home": "Профиль для гипсокартона",
+            "star3": "Инструмент",
+            "sta5r": "Вставки",
+            "staлоджэrf": "Источник света",
+            "staлоджэrf": "Управление освещением",
+            "staждлrf": "Освещеине Denkirs",
+            "staджлэr3": "Комплектующие",
+            "staзэ5r": "Расходные материалы",
+            "stгшгздf": "Шины и бленды",
+            "sta": "Электрика",
+
         }
         for icon_name in icons_item.keys():
             self.root.ids.content_drawer.ids.md_list.add_widget(
